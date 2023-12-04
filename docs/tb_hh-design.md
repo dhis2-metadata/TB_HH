@@ -1,1 +1,1 @@
-# TB Household Contact Investigation { #tb-hh-design }
+# TB Household Contact Investigation Design { #tb-hh-design }
