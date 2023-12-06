@@ -21,7 +21,7 @@ timeline
     section Oct - Dec 2023 <br> 2023Q4
       Members of active cohort with an outcome: Included in report if outcome is available during this period
     section Jan - Mar 2024 <br> 2024Q1
-      Members of active cohort with an outcome: v if outcome is available during this period: Outcomes for members of active cohort will be reported during this period
+      Members of active cohort with an outcome: Included in report if outcome is available during this period: Outcomes for members of active cohort will be reported during this period
     section Apr 2024
       Final Outcomes Report for active cohort is available
 
