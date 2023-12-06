@@ -23,5 +23,5 @@ timeline
       Members of active cohort with an outcome: Included in report if outcome is available during this period: Outcomes for members of active cohort will be reported during this period
     section Apr 2024
       Final Outcomes Report for active cohort is available
-
 ```
+
