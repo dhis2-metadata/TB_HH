@@ -9,7 +9,7 @@ The algorythm for reporting and calculating TPT outcomes in DHIS2 is described i
 
  ```mermaid
 
-%%{init: {'mirrorActors': false } }%%
+%%{init: {'mirrorActors': false, 'theme': 'dark' } }%%
 timeline
     title Reporting and Calculation of TPT Outcome Indicators
     section Jan - Mar 2023 <br> 2023Q1
