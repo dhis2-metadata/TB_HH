@@ -3,7 +3,6 @@
 ## Workflow
 
 ```mermaid
-
 ---
 title: TB Household Contact Investigation
 ---
@@ -55,8 +54,8 @@ The algorythm for reporting and calculating TPT outcomes in DHIS2 is described i
  ```mermaid
 
 %%{init: {'mirrorActors': false, 'theme': 'dark' } }%%
+
 timeline
-    title Reporting and Calculation of TPT Outcomes
     section Jan - Mar 2023 <br> 2023Q1
       Active cohort (Household contacts identified during 2023Q1 started on TPT): Included in report if outcome is available during this period
     section Apr - Jun 2023 <br> 2023Q2
