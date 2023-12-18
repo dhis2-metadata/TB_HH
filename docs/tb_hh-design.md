@@ -109,6 +109,14 @@ The design of the tracker follows WHO recommendations for reporting on TB preven
 
 The default design of the tracker foresees the registration of household contacts via the relationship widget in the Tracker Capture/Capture app. The relationship is created between a person enrolled in TB Case Surveillance programme and a person enrolled in the Household Contact Investigation programme. The relationship type is biderictional. More information on the configuration of the relationship type is available in the [installation guide](#tb-hh-installation).
 
+### User Groups
+
+The package utilises the same user groups as the TB Case Surveillance package:
+
+TB Admin: can edit/view metadata; no access to data [all program stages]
+TB Data capture: can view metadata, can capture data [all program stages]
+TB Access: can view metadata, can view data [all program stages]
+
 ## Analytics
 
 Raw data collected in the Household Contact Tracing Investigation package provides numerators and denominators for the recommended analytical outputs. A data exchange component included in the package is configured to aggregate data on a quarterly basis and populate the Household Contacts dashboard, included in the TB HMIS module.
