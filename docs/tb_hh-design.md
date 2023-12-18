@@ -74,12 +74,12 @@ flowchart LR
         end
   end
   A <--> id3 <--> B
-  
+
 ```
 
 ### Program Structure and Design
 
-The design of the tracker follows WHO recommendations for reporting on TB preventive activities among household contacts. The program allows retrospective and close to real-time data entry. User receives feedback messages and recommendations based on entered data. These recommendations are not restrictive and are meant to support data entry and possibly identify gaps in the quality of service delivery. The program is divided into the following stages: Registration, Screening, TPT and TPT Outcome.
+The design of the tracker follows WHO recommendations for reporting on TB preventive activities among household contacts. The program allows retrospective and close to real-time data entry. User receives feedback messages and recommendations based on entered data. These recommendations are not restrictive and are meant to support data entry and possibly identify gaps in the quality of service delivery. The program is divided into the following stages: Enrollment, Screening and Testing, TPT and TPT Outcome.
 
   1. Enrollment
 
@@ -105,11 +105,41 @@ The design of the tracker follows WHO recommendations for reporting on TB preven
 
      The date of the TPT outcome event is the date when the outcome is recorded. The outcomes "Lost to follow up" and "Died" are separated from the outcome "Stopped". If the TPT outcome is stopped, the user will be prompted to provide a reson for stopping TPT. The eventual delay in outcome (difference in months between expected outcome date and actuall outcome date will be displayed. The user may then close the enrollment.
 
-## Analytics
-  
-### Reporting and Calculation of TPT Outcomes
+### Relationship Configuration
 
-All indicator data for the Household Contacts is aggregated quarterly. The period for the recording of the outcome is dependent on the length of the TPT regimen. In the current module, the longest recommended TPT regimen is 9 months. The period to report the outcomes for an active cohort is set up to 9 months after the end of the period during which the members of the active cohort are registered in the Household Contacts Investigation program. This period may be subject to change depending on country guidelines (eg. longest regimen available).
+The default design of the tracker foresees the registration of household contacts via the relationship widget in the Tracker Capture/Capture app. The relationship is created between a person enrolled in TB Case Surveillance programme and a person enrolled in the Household Contact Investigation programme. The relationship type is biderictional. More information on the configuration of the relationship type is available in the [installation guide](#tb-hh-installation).
+
+## Analytics
+
+Raw data collected in the Household Contact Tracing Investigation package provides numerators and denominators for the recommended analytical outputs. A data exchange component included in the package is configured to aggregate data on a quarterly basis and populate the Household Contacts dashboard, included in the TB HMIS module.
+
+### Aggregate Data Exchange
+
+An aggregate data exchange component is an editable object that is included in the package. It is configured to aggregate program indicator data and assign quarterly values to the corresponding data elements and category option combinations of the [Household Contacts data set](#tb-agg-hh-design), which is part of the DHIS2 TB HMIS package.
+
+### Indicators
+
+Intital package includes a set of program indicators that can be divided into two following groups:
+
+- Identification, screening and TPT
+
+  | Indicator | Definition |
+  |-|-|
+  | Contacts identified (0-4 years, 5+ years) | All enrollments **with a registration date within the reporting periodr** |
+  | Contacts screened (0-4 years, 5+ years) | All enrollments thatflagged as screened **with a registration date within the reporting periodr** |
+  | Contacts eligible for TPT (0-4 years, 5+ years) | All enrollments flagged as eligible for TPT **with a registration date within the reporting period** |
+  | Contacts started on TPT (0-4 years, 5+ years) | All enrollments flagged as started on TPT **with a registration date within the reporting period** |
+
+- TPT outcomes
+
+  | Indicator | Definition |
+  |-|-|
+  | Contacts completed TPT (0-4 years, 5+ years) | All enrollments that have completed TPT **with a registration date during the period which is 9 months (3 quarters) prior to the reporting period** |
+  | Contacts stopped TPT (0-4 years, 5+ years) | All enrollments that have stopped TPT **with a registration date during the period which is 9 months (3 quarters) prior to the reporting period** |
+
+**Reporting and Calculation of TPT Outcomes**
+
+The actual period for the recording of the outcome is dependent on the length of the TPT regimen. In the current module, the longest recommended TPT regimen is 9 months. The period to report the outcomes for an active cohort is set up to 9 months after the end of the period during which the members of the active cohort are registered in the Household Contacts Investigation program. This period may be subject to change depending on country guidelines (eg. longest regimen available).
 The algorythm for reporting and calculating TPT outcomes in DHIS2 is described in the table below.
 
  ```mermaid
@@ -129,3 +159,22 @@ timeline
       Final Outcomes Report for active cohort is available
 ```
 
+### Line Listing
+
+Household Contact Tracing Investigation package includes a dashboard with 3 line lists:
+
+  | Line List | Description |
+  |-|-|
+  | Household contacts of bacteriologically confirmed TB patients that are yet to be screened for eligibility | All registered contacts that have no registered screening-related data <br> PLHIV cases and children under 5 will also appear on this list even though screening is not required for these groups |
+  | Eligible household contacts yet to start on TPT | All registered contacts that are TPT-eligible and have not started on TPT |
+  | TPT clients with no outcome recorded | All clients registered and started on TPT that have not received an outcome <br> This line list includes all clients independent of the period when the TPT outcome is due. In order to access a list of clients with no recorded outcome in the current period, it is recommended to schedule the outcome events based on the expected date of TPT completion in Tracker and generate the list of due and overdue events in the Tracker Capture dashboard interface|
+
+The content of the line lists as well as the definitions may be adjusted according to the implementation requirements.
+
+## References
+
+World Health Organization (20 March 2020). WHO consolidated guidelines on tuberculosis: module 1: prevention: tuberculosis preventive treatment. URL: <https://www.who.int/publications/i/item/9789240001503>
+
+World Health Organization (January 2020). “Definitions and reporting framework for tuberculosis – 2013 revision (updated December 2014 and January 2020)”. URL: <http://apps.who.int/iris/bitstream/handle/10665/79199/9789241505345_eng.pdf;jsessionid=0911B3678B5EF8EBD24C834EA882F199?sequence=1>
+
+World Health Organization (2023). “Consolidated guidance on tuberculosis data generation and use. Module 1. Tuberculosis Surveillance”. Geneva: World Health Organization; 2023. Licence: CC BY-NC-SA 3.0 IGO (in press)
