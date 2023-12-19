@@ -299,11 +299,11 @@ By default the following is assigned to these user groups
 
 |Object|User Groups| | | | |
 |:-|:-|:-|:-|:-|:-|
-| | TB access | TB lab access | TB admin | TB data capture | TB lab data capture |
-| Tracked entity type | **Metadata:** can view <br> **Data:** can view | **Metadata:** can view <br> **Data:** can view | **Metadata:** can edit and view <br> **Data:** no access | **Metadata:** can view <br> **Data:** can capture and view | **Metadata:** can view <br> **Data:** can capture and view |
-| Program | **Metadata:** can view <br> **Data:** can view | **Metadata:** can view <br> **Data:** can view | **Metadata:** can edit and view <br> **Data:** no access | **Metadata:** can view <br> **Data:** can capture and view | **Metadata:** can view <br> **Data:** can capture and view |
-| Program Stages | **Metadata:** can view <br> **Data:** can view | **Group access is limited to stages: TB Registration, Diagnostic and Laboratory Results** <br> **Metadata:** can view <br> **Data:** can view | **Metadata:** can edit and view <br> **Data:** no access | **Metadata:** can view <br> **Data:** can capture and view | **Group access is limited to stages: TB Registration and Laboratory Results** <br> **Metadata:** can view <br> **Data:** can capture and view |
-| Dashboards | **Metadata:** can view <br> **Data:** can view | **Metadata:** can view <br> **Data:** can view | **Metadata:** can edit and view <br> **Data:** no access | No access | No access |
+| | TB access | TB admin | TB data capture |
+| Tracked entity type | **Metadata:** can view <br> **Data:** can view | **Metadata:** can edit and view <br> **Data:** no access | **Metadata:** can view <br> **Data:** can capture and view |
+| Program | **Metadata:** can view <br> **Data:** can view | **Metadata:** can edit and view <br> **Data:** no access | **Metadata:** can view <br> **Data:** can capture and view |
+| Program Stages | **Metadata:** can view <br> **Data:** can view |  **Metadata:** can edit and view <br> **Data:** no access | **Metadata:** can view <br> **Data:** can capture and view |
+| Dashboards | **Metadata:** can view <br> **Data:** can view | **Metadata:** can edit and view <br> **Data:** no access | no access |
 
 Users need to be assigned to the aplicable user group based on their role within the system. Sharing for other objects in the package should be set up depending on requirements. Refer to the [DHIS2 Documentation](https://docs.dhis2.org/en/develop/using-the-api/dhis-core-version-master/sharing.html) for more information on configuring sharing.
 
@@ -329,57 +329,29 @@ Program must be assigned to applicable organisation units within the organisatio
 
 Even when metadata has been successfully imported without any import conflicts, there can be duplicates in the metadata - data elements, tracked entity attributes or option sets that already exist. As was noted in the section above on resolving conflict, an important issue to keep in mind is that decisions on making changes to the metadata in DHIS2 also needs to take into account other documents and resources that are in different ways associated with both the existing metadata, and the metadata that has been imported through the configuration package. Resolving duplicates is thus not only a matter of "cleaning up the database", but also making sure that this is done without, for example, breaking potential integrating with other systems, the possibility to use training material, breaking SOPs etc. This will very much be context-dependent.
 
-### Constants
-
-TB Case Surveillance Tracker package includes a set of tests and a list of drugs that can be modified by the implementing country according to national context (e.g. which drugs and tests are used/available in country). The use of constants and corresponding program rules enables a system admin in an implementing country to easily ‘turn on’ or ‘turn off’ types of drugs and tests depending on requirements. Instructions for configuring constants are provided in the description of the constant objects.
-
 ### Configuring tracker capture interface, widgets and top bar
 
-You must configure tracker capture dashboard after the package has been installed. This configuration includes data entry forms, widgets and top bar.
+Tracker capture dashboard must be configured after the package has been installed. This configuration includes data entry forms, widgets and top bar.
 
 #### Data entry forms
 
 * After registering the first (test) case, access the **Settings** menu in the tracker capture form and select **Show/Hide Widgets**
-* Use **Timeline Data Entry**
-* Make sure that **Enrollment**, **Feedback** and **Profile** widgets are selected. Click **Close**.
+* Use **Tabular Data Entry**
+* Make sure that **Enrollment**, **Feedback**,  **Profile** and **Relationships** widgets are selected. Click **Close**.
+* Click "Saved dashboard layout as default"
+* Click "Lock layout for all users"
 
 #### Top Bar
 
-* Access the **Settings** menu and select **Top bar settings**
-* Select **Activate top bar**
-* Select required information fields and assign **Sort order**
-
-| Recommended fields                     | Sort order |
-|:---------------------------------------|:-----------|
-| **Attributes**                         |            |
-| TB Registration Number                 | 2          |
-| **Indicators**                         |            |
-| Case classification                    | 8          |
-| Patient's age (years)                  | 5          |
-| HIV Status at diagnosis                | 6          |
-| Resistance at diagnosis                | 10         |
-| Treatment regimen                      | 9          |
-| Date of diagnosis                      | 1          |
-| Months since diagnosis                 | 3          |
-| Resistance classification at diagnosis | 7          |
-| Patient's age (months)                 | 4          |
-
-* Click **Save**
-* Return to the **Settings** menu. Click **Saved dashboard layout as default**. Lock layout for all users.
-
-### Program notifications
-
-TB CS Tracker 2.0.0 includes 4 notification templates that can be edited based on local requirements. Additional configuration for setting up SMS or email notifications is required.
+Top bar activation and configuration allows the user to have a clear overview of key case data displayed at the top of the tracker capture dashboard. 
 
 ### Reporting case-based data into aggregate data sets
 
-The TB case-based surveillance tracker captures data that can be fed into standard, aggregate reporting (i.e. monthly, quarterly, yearly or as determined by the country). Aggregate DHIS2 TB HMIS system design can be accessed at [https://dhis2.org/metadata-package-downloads/#tb](https://dhis2.org/metadata-package-downloads/#tb)
+The TB Household Contacts Investigation tracker includes an Aggregate Data Exchane component that can aggregate case-based data and feed it to the quarterly data sets included in the TB HMIS package.
 
-This [Tracker-to-Aggregate tool](https://github.com/dhis2/integration-t2a) can be easily configured for data transfer..
+***********STOPPED HERE***********
 
-More information is available in the [Tracker to aggregate data integration guide](https://docs.dhis2.org/en/implement/maintenance-and-use/tracker-and-aggregate-data-integration.html#how-to-saving-aggregated-tracker-data-as-aggregate-data-values).
-
-The **program indicators** in the TB Case Surveillance and Laboratory package are mapped with **data elements** and **category option combinations** in the DHIS2 TB aggregate package (Laboratory, Notifications and outcomes).
+The **program indicators** are mapped with **data elements** and **category option combinations** in the DHIS2 TB aggregate package (Laboratory, Notifications and outcomes).
 
 ## Adapting the tracker program
 
