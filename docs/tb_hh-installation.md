@@ -347,11 +347,11 @@ Top bar activation and configuration allows the user to have a clear overview of
 
 ### Reporting case-based data into aggregate data sets
 
-The TB Household Contacts Investigation tracker includes an Aggregate Data Exchane component that can aggregate case-based data and feed it to the quarterly data sets included in the TB HMIS package.
+The TB Household Contacts Investigation tracker includes an Aggregate Data Exchange configuration that can aggregate case-based data and populate the quarterly "TB Household Contacts" data sets included in the TB HMIS package.
 
-***********STOPPED HERE***********
+The **program indicators** are mapped with **data elements** and **category option combinations** in the aggregate package.
 
-The **program indicators** are mapped with **data elements** and **category option combinations** in the DHIS2 TB aggregate package (Laboratory, Notifications and outcomes).
+The default configuration is set to internal data exchange, i.e. when the tracker and the aggregate data sets are located in the same instance. It is possible to change this configuration in the json component. The user working with data exchange has to have access to both tracker and aggregate data. More information can be found in the [Data Exchange documentation](https://docs.dhis2.org/en/develop/using-the-api/dhis-core-version-master/data-exchange.html#data-exchange)
 
 ## Adapting the tracker program
 
