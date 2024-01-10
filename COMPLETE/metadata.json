@@ -4088,7 +4088,7 @@
         "description": "TB Household Contacts Investigation",
         "healthAreaCode": "TB",
         "healthAreaName": "Tuberculosis",
-        "lastUpdated": "20240110T083923",
+        "lastUpdated": "20240110T092053",
         "locale": "en",
         "name": "TB_HH_TRK_DHIS2.40.2-en",
         "type": "TRK",
