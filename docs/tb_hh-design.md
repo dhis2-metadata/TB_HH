@@ -38,7 +38,7 @@ title: TB Household Contact Investigation
 ---
 %%{init: {'mirrorActors': false } }%%
 
-flowchart LR
+flowchart TB
   subgraph A[Identification of Household contacts]
       direction TB
         subgraph AA[TB Case Surveillance]
@@ -150,7 +150,7 @@ Intital package includes a set of program indicators that can be divided into tw
 The actual period for the recording of the outcome is dependent on the length of the TPT regimen. In the current module, the longest recommended TPT regimen is 9 months. The period to report the outcomes for an active cohort is set up to 9 months after the end of the period during which the members of the active cohort are registered in the Household Contacts Investigation program. This period may be subject to change depending on country guidelines (eg. longest regimen available).
 The algorythm for reporting and calculating TPT outcomes in DHIS2 is described in the table below.
 
- ```mermaid
+```mermaid
 
 %%{init: {'mirrorActors': false, 'theme': 'dark' } }%%
 
