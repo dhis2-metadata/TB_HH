@@ -133,8 +133,8 @@ Intital package includes a set of program indicators that can be divided into tw
 
   | Indicator | Definition |
   |-|-|
-  | Contacts identified (0-4 years, 5+ years) | All enrollments **with a registration date within the reporting periodr** |
-  | Contacts screened (0-4 years, 5+ years) | All enrollments thatflagged as screened **with a registration date within the reporting periodr** |
+  | Contacts identified (0-4 years, 5+ years) | All enrollments **with a registration date within the reporting period** |
+  | Contacts screened (0-4 years, 5+ years) | All enrollments thatflagged as screened **with a registration date within the reporting period** |
   | Contacts eligible for TPT (0-4 years, 5+ years) | All enrollments flagged as eligible for TPT **with a registration date within the reporting period** |
   | Contacts started on TPT (0-4 years, 5+ years) | All enrollments flagged as started on TPT **with a registration date within the reporting period** |
 
