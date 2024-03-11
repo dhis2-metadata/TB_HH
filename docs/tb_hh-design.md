@@ -103,7 +103,7 @@ The design of the tracker follows WHO recommendations for reporting on TB preven
 
   4. TPT Outcome
 
-     The date of the TPT outcome event is the date when the outcome is recorded. The outcomes "Lost to follow up" and "Died" are separated from the outcome "Stopped". If the TPT outcome is stopped, the user will be prompted to provide a reson for stopping TPT. The eventual delay in outcome (difference in months between expected outcome date and actuall outcome date will be displayed. The user may then close the enrollment.
+     The date of the TPT outcome event is the date when the outcome is recorded. The outcomes "Lost to follow up" and "Died" are separated from the outcome "Stopped". If the TPT outcome is stopped, the user will be prompted to provide a reason for stopping TPT. The eventual delay in outcome (difference in months between expected outcome date and actuall outcome date will be displayed. The user may then close the enrollment.
 
 ### Relationship Configuration
 
