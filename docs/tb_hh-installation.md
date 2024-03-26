@@ -253,17 +253,19 @@ It is recommended to use version 2.1.0 of the TB Case Surveillance package when 
 This configuration creates a bidirectional relationship between Tracked Entity Instances and allows the user to see the following data in the relationship widget:
 
 1. For the TB Case:
+   
    | Name | Object | UID |
    |-|-|-|
-   | Household Contact | Relationship | -/- |
+   | Household Contact | Relationship |  |
    | Given name | Tracked Entity Attribute | `sB1IHYu2xQT` |
    | Family name | Tracked Entity Attribute | `ENRjVGxVL6l` |
    | National ID | Tracked Entity Attribute | `Ewi7FUfcHAD` |
 
 3. For the Household contact:
+   
    | Name | Object | UID |
    |-|-|-|
-   | Index case | Relationship | -/- |
+   | Index case | Relationship |  |
    | Given name | Tracked Entity Attribute | `sB1IHYu2xQT` |
    | Family name | Tracked Entity Attribute | `ENRjVGxVL6l` |
    | National ID | Tracked Entity Attribute | `Ewi7FUfcHAD` |
