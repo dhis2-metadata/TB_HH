@@ -26,11 +26,6 @@
                 "users": {}
             },
             "source": {
-                "params": {
-                    "periodTypes": [
-                        "QUARTERLY"
-                    ]
-                },
                 "requests": [
                     {
                         "dx": [
@@ -49,8 +44,9 @@
                         "ou": [
                             "LEVEL-4"
                         ],
+                        "outputDataElementIdScheme": "CODE",
                         "outputIdScheme": "ATTRIBUTE:vudyDP7jUy5",
-                        "outputOrgUnitIdScheme": "CODE",
+                        "outputOrgUnitIdScheme": "UID",
                         "pe": [
                             "LAST_4_QUARTERS"
                         ]
@@ -62,7 +58,7 @@
                     "categoryOptionComboIdScheme": "CODE",
                     "dataElementIdScheme": "CODE",
                     "idScheme": "CODE",
-                    "orgUnitIdScheme": "CODE"
+                    "orgUnitIdScheme": "UID"
                 },
                 "type": "INTERNAL"
             },
@@ -94,11 +90,6 @@
                 "users": {}
             },
             "source": {
-                "params": {
-                    "periodTypes": [
-                        "QUARTERLY"
-                    ]
-                },
                 "requests": [
                     {
                         "dx": [
@@ -115,8 +106,9 @@
                         "ou": [
                             "LEVEL-4"
                         ],
+                        "outputDataElementIdScheme": "CODE",
                         "outputIdScheme": "ATTRIBUTE:vudyDP7jUy5",
-                        "outputOrgUnitIdScheme": "CODE",
+                        "outputOrgUnitIdScheme": "UID",
                         "pe": [
                             "LAST_4_QUARTERS"
                         ]
@@ -128,7 +120,7 @@
                     "categoryOptionComboIdScheme": "CODE",
                     "dataElementIdScheme": "CODE",
                     "idScheme": "CODE",
-                    "orgUnitIdScheme": "CODE"
+                    "orgUnitIdScheme": "UID"
                 },
                 "type": "INTERNAL"
             },
@@ -1018,6 +1010,7 @@
             "name": "default",
             "sharing": {
                 "external": false,
+                "owner": "vUeLeQMSwhN",
                 "public": "r-------",
                 "userGroups": {},
                 "users": {}
@@ -1039,6 +1032,7 @@
             "name": "default",
             "sharing": {
                 "external": false,
+                "owner": "vUeLeQMSwhN",
                 "public": "r-------",
                 "userGroups": {},
                 "users": {}
@@ -1085,7 +1079,122 @@
         }
     ],
     "constants": [],
-    "dashboards": [],
+    "dashboards": [
+        {
+            "allowedFilters": [],
+            "code": "TB_HH_LL",
+            "dashboardItems": [
+                {
+                    "attributeValues": [],
+                    "contentCount": 1,
+                    "eventVisualization": {
+                        "id": "z5ZtVMva70w"
+                    },
+                    "favorite": false,
+                    "favorites": [],
+                    "height": 26,
+                    "id": "B5weR0ORdPY",
+                    "interpretationCount": 0,
+                    "interpretationLikeCount": 0,
+                    "reports": [],
+                    "resources": [],
+                    "sharing": {
+                        "external": false,
+                        "userGroups": {},
+                        "users": {}
+                    },
+                    "translations": [],
+                    "type": "EVENT_VISUALIZATION",
+                    "users": [],
+                    "width": 37,
+                    "x": 0,
+                    "y": 0
+                },
+                {
+                    "attributeValues": [],
+                    "contentCount": 1,
+                    "eventVisualization": {
+                        "id": "bLKZiVFMK2Z"
+                    },
+                    "favorite": false,
+                    "favorites": [],
+                    "height": 28,
+                    "id": "nIGAEdTysyp",
+                    "interpretationCount": 0,
+                    "interpretationLikeCount": 0,
+                    "reports": [],
+                    "resources": [],
+                    "sharing": {
+                        "external": false,
+                        "userGroups": {},
+                        "users": {}
+                    },
+                    "translations": [],
+                    "type": "EVENT_VISUALIZATION",
+                    "users": [],
+                    "width": 37,
+                    "x": 0,
+                    "y": 26
+                },
+                {
+                    "attributeValues": [],
+                    "contentCount": 1,
+                    "eventVisualization": {
+                        "id": "fp3JevS1lOO"
+                    },
+                    "favorite": false,
+                    "favorites": [],
+                    "height": 24,
+                    "id": "T7g1wbNTKa3",
+                    "interpretationCount": 0,
+                    "interpretationLikeCount": 0,
+                    "reports": [],
+                    "resources": [],
+                    "sharing": {
+                        "external": false,
+                        "userGroups": {},
+                        "users": {}
+                    },
+                    "translations": [],
+                    "type": "EVENT_VISUALIZATION",
+                    "users": [],
+                    "width": 37,
+                    "x": 0,
+                    "y": 54
+                }
+            ],
+            "id": "E9WRmOt4rpc",
+            "itemConfig": {
+                "insertPosition": "END"
+            },
+            "layout": {
+                "columns": []
+            },
+            "name": "TB-HH - Line lists",
+            "restrictFilters": false,
+            "sharing": {
+                "external": false,
+                "owner": "vUeLeQMSwhN",
+                "public": "--------",
+                "userGroups": {
+                    "UKWx4jJcrKt": {
+                        "access": "r-------",
+                        "id": "UKWx4jJcrKt"
+                    },
+                    "Ubzlyfqm1gO": {
+                        "access": "rw------",
+                        "id": "Ubzlyfqm1gO"
+                    },
+                    "pyu2ZlNKbzQ": {
+                        "access": "r-------",
+                        "id": "pyu2ZlNKbzQ"
+                    }
+                },
+                "users": {}
+            },
+            "translations": []
+        }
+    ],
     "dataElementGroups": [
         {
             "attributeValues": [],
@@ -1107,10 +1216,10 @@
                     "id": "Clp8fsfaHzJ"
                 },
                 {
-                    "id": "Uhwztjvdc3F"
+                    "id": "F4w44YRmTP2"
                 },
                 {
-                    "id": "F4w44YRmTP2"
+                    "id": "Uhwztjvdc3F"
                 },
                 {
                     "id": "QpTelDgL9OG"
@@ -1119,10 +1228,10 @@
                     "id": "NvN5GC5HB8q"
                 },
                 {
-                    "id": "yTmPzz0Hz5D"
+                    "id": "DgKsDqyBPCG"
                 },
                 {
-                    "id": "DgKsDqyBPCG"
+                    "id": "yTmPzz0Hz5D"
                 },
                 {
                     "id": "PC6rHuEc4fN"
@@ -1134,9 +1243,6 @@
                     "id": "tGWC2TJDhSr"
                 },
                 {
-                    "id": "BMriHTRrSiC"
-                },
-                {
                     "id": "mS1EnkNKB0N"
                 },
                 {
@@ -1144,6 +1250,9 @@
                 },
                 {
                     "id": "ehtg3U5qmuI"
+                },
+                {
+                    "id": "BMriHTRrSiC"
                 },
                 {
                     "id": "t5ECMNPBNuD"
@@ -2573,7 +2682,443 @@
     "dataEntryForms": [],
     "dataSets": [],
     "documents": [],
-    "eventVisualizations": [],
+    "eventVisualizations": [
+        {
+            "attributeDimensions": [
+                {
+                    "attribute": {
+                        "id": "Ys8oLYQzmR3"
+                    }
+                },
+                {
+                    "attribute": {
+                        "id": "sB1IHYu2xQT"
+                    }
+                },
+                {
+                    "attribute": {
+                        "id": "ENRjVGxVL6l"
+                    }
+                },
+                {
+                    "attribute": {
+                        "id": "Ewi7FUfcHAD"
+                    }
+                }
+            ],
+            "attributeValues": [],
+            "categoryDimensions": [],
+            "categoryOptionGroupSetDimensions": [],
+            "colSubTotals": false,
+            "colTotals": false,
+            "collapseDataDimensions": false,
+            "columnDimensions": [
+                "ou",
+                "Ys8oLYQzmR3",
+                "sB1IHYu2xQT",
+                "ENRjVGxVL6l",
+                "Ewi7FUfcHAD",
+                "NvN5GC5HB8q",
+                "QpTelDgL9OG"
+            ],
+            "completedOnly": false,
+            "cumulativeValues": false,
+            "dataElementDimensions": [
+                {
+                    "dataElement": {
+                        "id": "NvN5GC5HB8q"
+                    },
+                    "programStage": {
+                        "id": "spe72N5wdi5"
+                    }
+                },
+                {
+                    "dataElement": {
+                        "id": "QpTelDgL9OG"
+                    },
+                    "programStage": {
+                        "id": "spe72N5wdi5"
+                    }
+                }
+            ],
+            "digitGroupSeparator": "SPACE",
+            "displayDensity": "NORMAL",
+            "filterDimensions": [
+                "yicQ3u82rk4"
+            ],
+            "fontSize": "NORMAL",
+            "hideEmptyRowItems": "NONE",
+            "hideEmptyRows": false,
+            "hideLegend": false,
+            "hideNaData": false,
+            "hideSubtitle": false,
+            "hideTitle": false,
+            "id": "fp3JevS1lOO",
+            "itemOrganisationUnitGroups": [],
+            "legacy": false,
+            "legend": {
+                "showKey": false
+            },
+            "name": "TB-HH-LL03 - TPT clients with no outcome recorded",
+            "noSpaceBetweenColumns": false,
+            "organisationUnitGroupSetDimensions": [],
+            "organisationUnitLevels": [],
+            "organisationUnits": [],
+            "outputType": "ENROLLMENT",
+            "percentStackedValues": false,
+            "periods": [],
+            "program": {
+                "id": "cQsXTtAJ3HW"
+            },
+            "programIndicatorDimensions": [
+                {
+                    "filter": "EQ:1",
+                    "programIndicator": {
+                        "id": "yicQ3u82rk4"
+                    }
+                }
+            ],
+            "regressionType": "NONE",
+            "repetitions": [],
+            "rowDimensions": [],
+            "rowSubTotals": false,
+            "rowTotals": false,
+            "sharing": {
+                "external": false,
+                "owner": "vUeLeQMSwhN",
+                "public": "r-------",
+                "userGroups": {
+                    "UKWx4jJcrKt": {
+                        "access": "r-------",
+                        "id": "UKWx4jJcrKt"
+                    },
+                    "Ubzlyfqm1gO": {
+                        "access": "rw------",
+                        "id": "Ubzlyfqm1gO"
+                    },
+                    "pyu2ZlNKbzQ": {
+                        "access": "r-------",
+                        "id": "pyu2ZlNKbzQ"
+                    }
+                },
+                "users": {}
+            },
+            "showData": false,
+            "showDimensionLabels": false,
+            "showHierarchy": false,
+            "simpleDimensions": [],
+            "skipRounding": false,
+            "sortOrder": 0,
+            "sorting": [],
+            "subscribers": [],
+            "topLimit": 0,
+            "translations": [],
+            "type": "LINE_LIST",
+            "userOrganisationUnit": true,
+            "userOrganisationUnitChildren": false,
+            "userOrganisationUnitGrandChildren": false
+        },
+        {
+            "attributeDimensions": [
+                {
+                    "attribute": {
+                        "id": "Ys8oLYQzmR3"
+                    }
+                },
+                {
+                    "attribute": {
+                        "id": "Ewi7FUfcHAD"
+                    }
+                },
+                {
+                    "attribute": {
+                        "id": "sB1IHYu2xQT"
+                    }
+                },
+                {
+                    "attribute": {
+                        "id": "ENRjVGxVL6l"
+                    }
+                },
+                {
+                    "attribute": {
+                        "id": "oindugucx72"
+                    }
+                },
+                {
+                    "attribute": {
+                        "id": "tLdqXZAPjIl"
+                    }
+                }
+            ],
+            "attributeValues": [],
+            "categoryDimensions": [],
+            "categoryOptionGroupSetDimensions": [],
+            "colSubTotals": false,
+            "colTotals": false,
+            "collapseDataDimensions": false,
+            "columnDimensions": [
+                "ou",
+                "enrollmentDate",
+                "Ys8oLYQzmR3",
+                "Ewi7FUfcHAD",
+                "sB1IHYu2xQT",
+                "ENRjVGxVL6l",
+                "oindugucx72",
+                "yyN6OZwYqQn",
+                "tLdqXZAPjIl"
+            ],
+            "completedOnly": false,
+            "cumulativeValues": false,
+            "dataElementDimensions": [
+                {
+                    "dataElement": {
+                        "id": "BMriHTRrSiC"
+                    },
+                    "filter": "IN:NV",
+                    "programStage": {
+                        "id": "exuCK1K3A3Q"
+                    }
+                }
+            ],
+            "digitGroupSeparator": "SPACE",
+            "displayDensity": "NORMAL",
+            "filterDimensions": [
+                "BMriHTRrSiC"
+            ],
+            "fontSize": "NORMAL",
+            "hideEmptyRowItems": "NONE",
+            "hideEmptyRows": false,
+            "hideLegend": false,
+            "hideNaData": false,
+            "hideSubtitle": false,
+            "hideTitle": false,
+            "id": "z5ZtVMva70w",
+            "itemOrganisationUnitGroups": [],
+            "legacy": false,
+            "legend": {
+                "showKey": false
+            },
+            "name": "TB_HH_LL01 - Household contacts of bacteriologically confirmed TB patients to be screened for eligibility",
+            "noSpaceBetweenColumns": false,
+            "organisationUnitGroupSetDimensions": [],
+            "organisationUnitLevels": [],
+            "organisationUnits": [],
+            "outputType": "ENROLLMENT",
+            "percentStackedValues": false,
+            "periods": [],
+            "program": {
+                "id": "cQsXTtAJ3HW"
+            },
+            "programIndicatorDimensions": [
+                {
+                    "programIndicator": {
+                        "id": "yyN6OZwYqQn"
+                    }
+                }
+            ],
+            "regressionType": "NONE",
+            "repetitions": [],
+            "rowDimensions": [],
+            "rowSubTotals": false,
+            "rowTotals": false,
+            "sharing": {
+                "external": false,
+                "owner": "vUeLeQMSwhN",
+                "public": "r-------",
+                "userGroups": {
+                    "UKWx4jJcrKt": {
+                        "access": "r-------",
+                        "id": "UKWx4jJcrKt"
+                    },
+                    "Ubzlyfqm1gO": {
+                        "access": "rw------",
+                        "id": "Ubzlyfqm1gO"
+                    },
+                    "pyu2ZlNKbzQ": {
+                        "access": "r-------",
+                        "id": "pyu2ZlNKbzQ"
+                    }
+                },
+                "users": {}
+            },
+            "showData": false,
+            "showDimensionLabels": false,
+            "showHierarchy": false,
+            "simpleDimensions": [
+                {
+                    "dimension": "enrollmentDate",
+                    "parent": "COLUMN",
+                    "values": []
+                }
+            ],
+            "skipRounding": false,
+            "sortOrder": 0,
+            "sorting": [],
+            "subscribers": [],
+            "topLimit": 0,
+            "translations": [],
+            "type": "LINE_LIST",
+            "userOrganisationUnit": true,
+            "userOrganisationUnitChildren": false,
+            "userOrganisationUnitGrandChildren": false
+        },
+        {
+            "attributeDimensions": [
+                {
+                    "attribute": {
+                        "id": "Ys8oLYQzmR3"
+                    }
+                },
+                {
+                    "attribute": {
+                        "id": "Ewi7FUfcHAD"
+                    }
+                },
+                {
+                    "attribute": {
+                        "id": "sB1IHYu2xQT"
+                    }
+                },
+                {
+                    "attribute": {
+                        "id": "ENRjVGxVL6l"
+                    }
+                },
+                {
+                    "attribute": {
+                        "id": "oindugucx72"
+                    }
+                },
+                {
+                    "attribute": {
+                        "id": "tLdqXZAPjIl"
+                    }
+                }
+            ],
+            "attributeValues": [],
+            "categoryDimensions": [],
+            "categoryOptionGroupSetDimensions": [],
+            "colSubTotals": false,
+            "colTotals": false,
+            "collapseDataDimensions": false,
+            "columnDimensions": [
+                "ou",
+                "enrollmentDate",
+                "Ys8oLYQzmR3",
+                "Ewi7FUfcHAD",
+                "sB1IHYu2xQT",
+                "ENRjVGxVL6l",
+                "oindugucx72",
+                "yyN6OZwYqQn",
+                "tLdqXZAPjIl"
+            ],
+            "completedOnly": false,
+            "cumulativeValues": false,
+            "dataElementDimensions": [
+                {
+                    "dataElement": {
+                        "id": "PggltT3qKDt"
+                    },
+                    "filter": "IN:1",
+                    "programStage": {
+                        "id": "spe72N5wdi5"
+                    }
+                },
+                {
+                    "dataElement": {
+                        "id": "BFAhfNcBzGP"
+                    },
+                    "filter": "IN:0;NV",
+                    "programStage": {
+                        "id": "spe72N5wdi5"
+                    }
+                }
+            ],
+            "digitGroupSeparator": "SPACE",
+            "displayDensity": "NORMAL",
+            "filterDimensions": [
+                "PggltT3qKDt",
+                "BFAhfNcBzGP"
+            ],
+            "fontSize": "NORMAL",
+            "hideEmptyRowItems": "NONE",
+            "hideEmptyRows": false,
+            "hideLegend": false,
+            "hideNaData": false,
+            "hideSubtitle": false,
+            "hideTitle": false,
+            "id": "bLKZiVFMK2Z",
+            "itemOrganisationUnitGroups": [],
+            "legacy": false,
+            "legend": {
+                "showKey": false
+            },
+            "name": "TB_HH_LL02 - Household contacts eligible to start TPT",
+            "noSpaceBetweenColumns": false,
+            "organisationUnitGroupSetDimensions": [],
+            "organisationUnitLevels": [],
+            "organisationUnits": [],
+            "outputType": "ENROLLMENT",
+            "percentStackedValues": false,
+            "periods": [],
+            "program": {
+                "id": "cQsXTtAJ3HW"
+            },
+            "programIndicatorDimensions": [
+                {
+                    "programIndicator": {
+                        "id": "yyN6OZwYqQn"
+                    }
+                }
+            ],
+            "regressionType": "NONE",
+            "repetitions": [],
+            "rowDimensions": [],
+            "rowSubTotals": false,
+            "rowTotals": false,
+            "sharing": {
+                "external": false,
+                "owner": "vUeLeQMSwhN",
+                "public": "r-------",
+                "userGroups": {
+                    "UKWx4jJcrKt": {
+                        "access": "r-------",
+                        "id": "UKWx4jJcrKt"
+                    },
+                    "Ubzlyfqm1gO": {
+                        "access": "rw------",
+                        "id": "Ubzlyfqm1gO"
+                    },
+                    "pyu2ZlNKbzQ": {
+                        "access": "r-------",
+                        "id": "pyu2ZlNKbzQ"
+                    }
+                },
+                "users": {}
+            },
+            "showData": false,
+            "showDimensionLabels": false,
+            "showHierarchy": false,
+            "simpleDimensions": [
+                {
+                    "dimension": "enrollmentDate",
+                    "parent": "COLUMN",
+                    "values": []
+                }
+            ],
+            "skipRounding": false,
+            "sortOrder": 0,
+            "sorting": [],
+            "subscribers": [],
+            "topLimit": 0,
+            "translations": [],
+            "type": "LINE_LIST",
+            "userOrganisationUnit": true,
+            "userOrganisationUnitChildren": false,
+            "userOrganisationUnitGrandChildren": false
+        }
+    ],
     "indicatorGroupSets": [],
     "indicatorGroups": [],
     "indicatorTypes": [],
@@ -4082,15 +4627,15 @@
     "organisationUnitGroupSets": [],
     "organisationUnitGroups": [],
     "package": {
-        "DHIS2Build": "db15b78",
-        "DHIS2Version": "2.40.2",
+        "DHIS2Build": "1cd8262",
+        "DHIS2Version": "2.41.4",
         "code": "TB_HH",
         "description": "TB Household Contacts Investigation",
         "healthAreaCode": "TB",
         "healthAreaName": "Tuberculosis",
-        "lastUpdated": "20240110T092053",
+        "lastUpdated": "20260108T130753",
         "locale": "en",
-        "name": "TB_HH_TRK_DHIS2.40.2-en",
+        "name": "TB_HH_TRK_DHIS2.41.4-en",
         "type": "TRK",
         "version": ""
     },
@@ -4106,7 +4651,6 @@
                     "analyticsPeriodBoundaryType": "BEFORE_END_OF_REPORTING_PERIOD",
                     "attributeValues": [],
                     "boundaryTarget": "ENROLLMENT_DATE",
-                    "externalAccess": false,
                     "favorite": false,
                     "favorites": [],
                     "id": "MCBZda8BRCn",
@@ -4115,15 +4659,12 @@
                         "userGroups": {},
                         "users": {}
                     },
-                    "translations": [],
-                    "userAccesses": [],
-                    "userGroupAccesses": []
+                    "translations": []
                 },
                 {
                     "analyticsPeriodBoundaryType": "AFTER_START_OF_REPORTING_PERIOD",
                     "attributeValues": [],
                     "boundaryTarget": "ENROLLMENT_DATE",
-                    "externalAccess": false,
                     "favorite": false,
                     "favorites": [],
                     "id": "Fc6ANVHleFt",
@@ -4132,9 +4673,7 @@
                         "userGroups": {},
                         "users": {}
                     },
-                    "translations": [],
-                    "userAccesses": [],
-                    "userGroupAccesses": []
+                    "translations": []
                 }
             ],
             "analyticsType": "ENROLLMENT",
@@ -4149,7 +4688,7 @@
             "code": "TB_HH_CONTACTS_TPT_ELIGIBLE_05PLUSY",
             "decimals": 0,
             "expression": "V{enrollment_count}",
-            "filter": "#{spe72N5wdi5.PggltT3qKDt} == 1 &&\n\nd2:yearsBetween(A{NI0QRzJvQ0k}, V{enrollment_date}) >= 5",
+            "filter": "#{spe72N5wdi5.PggltT3qKDt} == 1 &&\n\nd2:yearsBetween(A{NI0QRzJvQ0k},V{enrollment_date}) >= 5",
             "id": "eRoXEiZbz67",
             "legendSets": [],
             "name": "TB-HH - Household contacts TPT-eligible, +5y",
@@ -4187,7 +4726,6 @@
                     "analyticsPeriodBoundaryType": "BEFORE_END_OF_REPORTING_PERIOD",
                     "attributeValues": [],
                     "boundaryTarget": "ENROLLMENT_DATE",
-                    "externalAccess": false,
                     "favorite": false,
                     "favorites": [],
                     "id": "zAQNsi2Y5eO",
@@ -4196,15 +4734,12 @@
                         "userGroups": {},
                         "users": {}
                     },
-                    "translations": [],
-                    "userAccesses": [],
-                    "userGroupAccesses": []
+                    "translations": []
                 },
                 {
                     "analyticsPeriodBoundaryType": "AFTER_START_OF_REPORTING_PERIOD",
                     "attributeValues": [],
                     "boundaryTarget": "ENROLLMENT_DATE",
-                    "externalAccess": false,
                     "favorite": false,
                     "favorites": [],
                     "id": "D2nkJAaqg1K",
@@ -4213,9 +4748,7 @@
                         "userGroups": {},
                         "users": {}
                     },
-                    "translations": [],
-                    "userAccesses": [],
-                    "userGroupAccesses": []
+                    "translations": []
                 }
             ],
             "analyticsType": "ENROLLMENT",
@@ -4267,7 +4800,6 @@
                     "analyticsPeriodBoundaryType": "BEFORE_END_OF_REPORTING_PERIOD",
                     "attributeValues": [],
                     "boundaryTarget": "ENROLLMENT_DATE",
-                    "externalAccess": false,
                     "favorite": false,
                     "favorites": [],
                     "id": "cuD4dkjEHCr",
@@ -4276,15 +4808,12 @@
                         "userGroups": {},
                         "users": {}
                     },
-                    "translations": [],
-                    "userAccesses": [],
-                    "userGroupAccesses": []
+                    "translations": []
                 },
                 {
                     "analyticsPeriodBoundaryType": "AFTER_START_OF_REPORTING_PERIOD",
                     "attributeValues": [],
                     "boundaryTarget": "ENROLLMENT_DATE",
-                    "externalAccess": false,
                     "favorite": false,
                     "favorites": [],
                     "id": "P9PK23TwTvg",
@@ -4293,9 +4822,7 @@
                         "userGroups": {},
                         "users": {}
                     },
-                    "translations": [],
-                    "userAccesses": [],
-                    "userGroupAccesses": []
+                    "translations": []
                 }
             ],
             "analyticsType": "ENROLLMENT",
@@ -4340,7 +4867,6 @@
                     "analyticsPeriodBoundaryType": "BEFORE_END_OF_REPORTING_PERIOD",
                     "attributeValues": [],
                     "boundaryTarget": "ENROLLMENT_DATE",
-                    "externalAccess": false,
                     "favorite": false,
                     "favorites": [],
                     "id": "x0wkSdMJrzK",
@@ -4349,15 +4875,12 @@
                         "userGroups": {},
                         "users": {}
                     },
-                    "translations": [],
-                    "userAccesses": [],
-                    "userGroupAccesses": []
+                    "translations": []
                 },
                 {
                     "analyticsPeriodBoundaryType": "AFTER_START_OF_REPORTING_PERIOD",
                     "attributeValues": [],
                     "boundaryTarget": "ENROLLMENT_DATE",
-                    "externalAccess": false,
                     "favorite": false,
                     "favorites": [],
                     "id": "fhH2cINuesI",
@@ -4366,9 +4889,7 @@
                         "userGroups": {},
                         "users": {}
                     },
-                    "translations": [],
-                    "userAccesses": [],
-                    "userGroupAccesses": []
+                    "translations": []
                 }
             ],
             "analyticsType": "ENROLLMENT",
@@ -4421,7 +4942,6 @@
                     "analyticsPeriodBoundaryType": "BEFORE_END_OF_REPORTING_PERIOD",
                     "attributeValues": [],
                     "boundaryTarget": "ENROLLMENT_DATE",
-                    "externalAccess": false,
                     "favorite": false,
                     "favorites": [],
                     "id": "mIXiEjzbOzG",
@@ -4430,15 +4950,12 @@
                         "userGroups": {},
                         "users": {}
                     },
-                    "translations": [],
-                    "userAccesses": [],
-                    "userGroupAccesses": []
+                    "translations": []
                 },
                 {
                     "analyticsPeriodBoundaryType": "AFTER_START_OF_REPORTING_PERIOD",
                     "attributeValues": [],
                     "boundaryTarget": "ENROLLMENT_DATE",
-                    "externalAccess": false,
                     "favorite": false,
                     "favorites": [],
                     "id": "QGMo2uG6wfp",
@@ -4447,9 +4964,7 @@
                         "userGroups": {},
                         "users": {}
                     },
-                    "translations": [],
-                    "userAccesses": [],
-                    "userGroupAccesses": []
+                    "translations": []
                 }
             ],
             "analyticsType": "ENROLLMENT",
@@ -4502,7 +5017,6 @@
                     "analyticsPeriodBoundaryType": "BEFORE_END_OF_REPORTING_PERIOD",
                     "attributeValues": [],
                     "boundaryTarget": "ENROLLMENT_DATE",
-                    "externalAccess": false,
                     "favorite": false,
                     "favorites": [],
                     "id": "elsbW0hZIo3",
@@ -4511,15 +5025,12 @@
                         "userGroups": {},
                         "users": {}
                     },
-                    "translations": [],
-                    "userAccesses": [],
-                    "userGroupAccesses": []
+                    "translations": []
                 },
                 {
                     "analyticsPeriodBoundaryType": "AFTER_START_OF_REPORTING_PERIOD",
                     "attributeValues": [],
                     "boundaryTarget": "ENROLLMENT_DATE",
-                    "externalAccess": false,
                     "favorite": false,
                     "favorites": [],
                     "id": "atcgj1quQ7o",
@@ -4528,9 +5039,7 @@
                         "userGroups": {},
                         "users": {}
                     },
-                    "translations": [],
-                    "userAccesses": [],
-                    "userGroupAccesses": []
+                    "translations": []
                 }
             ],
             "analyticsType": "ENROLLMENT",
@@ -4583,7 +5092,6 @@
                     "analyticsPeriodBoundaryType": "BEFORE_END_OF_REPORTING_PERIOD",
                     "attributeValues": [],
                     "boundaryTarget": "ENROLLMENT_DATE",
-                    "externalAccess": false,
                     "favorite": false,
                     "favorites": [],
                     "id": "me4tKd9wIWD",
@@ -4592,15 +5100,12 @@
                         "userGroups": {},
                         "users": {}
                     },
-                    "translations": [],
-                    "userAccesses": [],
-                    "userGroupAccesses": []
+                    "translations": []
                 },
                 {
                     "analyticsPeriodBoundaryType": "AFTER_START_OF_REPORTING_PERIOD",
                     "attributeValues": [],
                     "boundaryTarget": "ENROLLMENT_DATE",
-                    "externalAccess": false,
                     "favorite": false,
                     "favorites": [],
                     "id": "iOVgVkjxMA6",
@@ -4609,9 +5114,7 @@
                         "userGroups": {},
                         "users": {}
                     },
-                    "translations": [],
-                    "userAccesses": [],
-                    "userGroupAccesses": []
+                    "translations": []
                 }
             ],
             "analyticsType": "ENROLLMENT",
@@ -4664,7 +5167,6 @@
                     "analyticsPeriodBoundaryType": "BEFORE_END_OF_REPORTING_PERIOD",
                     "attributeValues": [],
                     "boundaryTarget": "ENROLLMENT_DATE",
-                    "externalAccess": false,
                     "favorite": false,
                     "favorites": [],
                     "id": "AMn9ibEVow0",
@@ -4673,15 +5175,12 @@
                         "userGroups": {},
                         "users": {}
                     },
-                    "translations": [],
-                    "userAccesses": [],
-                    "userGroupAccesses": []
+                    "translations": []
                 },
                 {
                     "analyticsPeriodBoundaryType": "AFTER_START_OF_REPORTING_PERIOD",
                     "attributeValues": [],
                     "boundaryTarget": "ENROLLMENT_DATE",
-                    "externalAccess": false,
                     "favorite": false,
                     "favorites": [],
                     "id": "Ar2qFQ5J0YN",
@@ -4690,9 +5189,7 @@
                         "userGroups": {},
                         "users": {}
                     },
-                    "translations": [],
-                    "userAccesses": [],
-                    "userGroupAccesses": []
+                    "translations": []
                 }
             ],
             "analyticsType": "ENROLLMENT",
@@ -4742,29 +5239,9 @@
             "aggregationType": "COUNT",
             "analyticsPeriodBoundaries": [
                 {
-                    "analyticsPeriodBoundaryType": "AFTER_START_OF_REPORTING_PERIOD",
-                    "attributeValues": [],
-                    "boundaryTarget": "ENROLLMENT_DATE",
-                    "externalAccess": false,
-                    "favorite": false,
-                    "favorites": [],
-                    "id": "dY3DCnM1OfK",
-                    "offsetPeriodType": "Quarterly",
-                    "offsetPeriods": -3,
-                    "sharing": {
-                        "external": false,
-                        "userGroups": {},
-                        "users": {}
-                    },
-                    "translations": [],
-                    "userAccesses": [],
-                    "userGroupAccesses": []
-                },
-                {
                     "analyticsPeriodBoundaryType": "BEFORE_END_OF_REPORTING_PERIOD",
                     "attributeValues": [],
                     "boundaryTarget": "ENROLLMENT_DATE",
-                    "externalAccess": false,
                     "favorite": false,
                     "favorites": [],
                     "id": "CDApNenOC0n",
@@ -4775,9 +5252,23 @@
                         "userGroups": {},
                         "users": {}
                     },
-                    "translations": [],
-                    "userAccesses": [],
-                    "userGroupAccesses": []
+                    "translations": []
+                },
+                {
+                    "analyticsPeriodBoundaryType": "AFTER_START_OF_REPORTING_PERIOD",
+                    "attributeValues": [],
+                    "boundaryTarget": "ENROLLMENT_DATE",
+                    "favorite": false,
+                    "favorites": [],
+                    "id": "dY3DCnM1OfK",
+                    "offsetPeriodType": "Quarterly",
+                    "offsetPeriods": -3,
+                    "sharing": {
+                        "external": false,
+                        "userGroups": {},
+                        "users": {}
+                    },
+                    "translations": []
                 }
             ],
             "analyticsType": "ENROLLMENT",
@@ -4830,7 +5321,6 @@
                     "analyticsPeriodBoundaryType": "BEFORE_END_OF_REPORTING_PERIOD",
                     "attributeValues": [],
                     "boundaryTarget": "ENROLLMENT_DATE",
-                    "externalAccess": false,
                     "favorite": false,
                     "favorites": [],
                     "id": "JKSBqLRDkNO",
@@ -4839,15 +5329,12 @@
                         "userGroups": {},
                         "users": {}
                     },
-                    "translations": [],
-                    "userAccesses": [],
-                    "userGroupAccesses": []
+                    "translations": []
                 },
                 {
                     "analyticsPeriodBoundaryType": "AFTER_START_OF_REPORTING_PERIOD",
                     "attributeValues": [],
                     "boundaryTarget": "ENROLLMENT_DATE",
-                    "externalAccess": false,
                     "favorite": false,
                     "favorites": [],
                     "id": "aqcWyLLpiON",
@@ -4856,9 +5343,7 @@
                         "userGroups": {},
                         "users": {}
                     },
-                    "translations": [],
-                    "userAccesses": [],
-                    "userGroupAccesses": []
+                    "translations": []
                 }
             ],
             "analyticsType": "ENROLLMENT",
@@ -4908,29 +5393,9 @@
             "aggregationType": "COUNT",
             "analyticsPeriodBoundaries": [
                 {
-                    "analyticsPeriodBoundaryType": "AFTER_START_OF_REPORTING_PERIOD",
-                    "attributeValues": [],
-                    "boundaryTarget": "ENROLLMENT_DATE",
-                    "externalAccess": false,
-                    "favorite": false,
-                    "favorites": [],
-                    "id": "ytSEehl9sLr",
-                    "offsetPeriodType": "Quarterly",
-                    "offsetPeriods": -3,
-                    "sharing": {
-                        "external": false,
-                        "userGroups": {},
-                        "users": {}
-                    },
-                    "translations": [],
-                    "userAccesses": [],
-                    "userGroupAccesses": []
-                },
-                {
                     "analyticsPeriodBoundaryType": "BEFORE_END_OF_REPORTING_PERIOD",
                     "attributeValues": [],
                     "boundaryTarget": "ENROLLMENT_DATE",
-                    "externalAccess": false,
                     "favorite": false,
                     "favorites": [],
                     "id": "WZe3UKzqvG9",
@@ -4941,9 +5406,23 @@
                         "userGroups": {},
                         "users": {}
                     },
-                    "translations": [],
-                    "userAccesses": [],
-                    "userGroupAccesses": []
+                    "translations": []
+                },
+                {
+                    "analyticsPeriodBoundaryType": "AFTER_START_OF_REPORTING_PERIOD",
+                    "attributeValues": [],
+                    "boundaryTarget": "ENROLLMENT_DATE",
+                    "favorite": false,
+                    "favorites": [],
+                    "id": "ytSEehl9sLr",
+                    "offsetPeriodType": "Quarterly",
+                    "offsetPeriods": -3,
+                    "sharing": {
+                        "external": false,
+                        "userGroups": {},
+                        "users": {}
+                    },
+                    "translations": []
                 }
             ],
             "analyticsType": "ENROLLMENT",
@@ -4995,7 +5474,6 @@
                     "analyticsPeriodBoundaryType": "BEFORE_END_OF_REPORTING_PERIOD",
                     "attributeValues": [],
                     "boundaryTarget": "ENROLLMENT_DATE",
-                    "externalAccess": false,
                     "favorite": false,
                     "favorites": [],
                     "id": "IxhRewzYxPi",
@@ -5004,15 +5482,12 @@
                         "userGroups": {},
                         "users": {}
                     },
-                    "translations": [],
-                    "userAccesses": [],
-                    "userGroupAccesses": []
+                    "translations": []
                 },
                 {
                     "analyticsPeriodBoundaryType": "AFTER_START_OF_REPORTING_PERIOD",
                     "attributeValues": [],
                     "boundaryTarget": "ENROLLMENT_DATE",
-                    "externalAccess": false,
                     "favorite": false,
                     "favorites": [],
                     "id": "kGNbnLV2Jdr",
@@ -5021,9 +5496,7 @@
                         "userGroups": {},
                         "users": {}
                     },
-                    "translations": [],
-                    "userAccesses": [],
-                    "userGroupAccesses": []
+                    "translations": []
                 }
             ],
             "analyticsType": "ENROLLMENT",
@@ -5066,29 +5539,9 @@
             "aggregationType": "COUNT",
             "analyticsPeriodBoundaries": [
                 {
-                    "analyticsPeriodBoundaryType": "AFTER_START_OF_REPORTING_PERIOD",
-                    "attributeValues": [],
-                    "boundaryTarget": "ENROLLMENT_DATE",
-                    "externalAccess": false,
-                    "favorite": false,
-                    "favorites": [],
-                    "id": "lIzjekyaYGs",
-                    "offsetPeriodType": "Quarterly",
-                    "offsetPeriods": -3,
-                    "sharing": {
-                        "external": false,
-                        "userGroups": {},
-                        "users": {}
-                    },
-                    "translations": [],
-                    "userAccesses": [],
-                    "userGroupAccesses": []
-                },
-                {
                     "analyticsPeriodBoundaryType": "BEFORE_END_OF_REPORTING_PERIOD",
                     "attributeValues": [],
                     "boundaryTarget": "ENROLLMENT_DATE",
-                    "externalAccess": false,
                     "favorite": false,
                     "favorites": [],
                     "id": "jIjmLoByXNx",
@@ -5099,9 +5552,23 @@
                         "userGroups": {},
                         "users": {}
                     },
-                    "translations": [],
-                    "userAccesses": [],
-                    "userGroupAccesses": []
+                    "translations": []
+                },
+                {
+                    "analyticsPeriodBoundaryType": "AFTER_START_OF_REPORTING_PERIOD",
+                    "attributeValues": [],
+                    "boundaryTarget": "ENROLLMENT_DATE",
+                    "favorite": false,
+                    "favorites": [],
+                    "id": "lIzjekyaYGs",
+                    "offsetPeriodType": "Quarterly",
+                    "offsetPeriods": -3,
+                    "sharing": {
+                        "external": false,
+                        "userGroups": {},
+                        "users": {}
+                    },
+                    "translations": []
                 }
             ],
             "analyticsType": "ENROLLMENT",
@@ -5145,29 +5612,9 @@
             "aggregationType": "COUNT",
             "analyticsPeriodBoundaries": [
                 {
-                    "analyticsPeriodBoundaryType": "AFTER_START_OF_REPORTING_PERIOD",
-                    "attributeValues": [],
-                    "boundaryTarget": "ENROLLMENT_DATE",
-                    "externalAccess": false,
-                    "favorite": false,
-                    "favorites": [],
-                    "id": "ScVdInwN06B",
-                    "offsetPeriodType": "Quarterly",
-                    "offsetPeriods": -3,
-                    "sharing": {
-                        "external": false,
-                        "userGroups": {},
-                        "users": {}
-                    },
-                    "translations": [],
-                    "userAccesses": [],
-                    "userGroupAccesses": []
-                },
-                {
                     "analyticsPeriodBoundaryType": "BEFORE_END_OF_REPORTING_PERIOD",
                     "attributeValues": [],
                     "boundaryTarget": "ENROLLMENT_DATE",
-                    "externalAccess": false,
                     "favorite": false,
                     "favorites": [],
                     "id": "EwDd5cfQrGQ",
@@ -5178,9 +5625,23 @@
                         "userGroups": {},
                         "users": {}
                     },
-                    "translations": [],
-                    "userAccesses": [],
-                    "userGroupAccesses": []
+                    "translations": []
+                },
+                {
+                    "analyticsPeriodBoundaryType": "AFTER_START_OF_REPORTING_PERIOD",
+                    "attributeValues": [],
+                    "boundaryTarget": "ENROLLMENT_DATE",
+                    "favorite": false,
+                    "favorites": [],
+                    "id": "ScVdInwN06B",
+                    "offsetPeriodType": "Quarterly",
+                    "offsetPeriods": -3,
+                    "sharing": {
+                        "external": false,
+                        "userGroups": {},
+                        "users": {}
+                    },
+                    "translations": []
                 }
             ],
             "analyticsType": "ENROLLMENT",
@@ -5230,29 +5691,9 @@
             "aggregationType": "COUNT",
             "analyticsPeriodBoundaries": [
                 {
-                    "analyticsPeriodBoundaryType": "AFTER_START_OF_REPORTING_PERIOD",
-                    "attributeValues": [],
-                    "boundaryTarget": "ENROLLMENT_DATE",
-                    "externalAccess": false,
-                    "favorite": false,
-                    "favorites": [],
-                    "id": "c1d8zUd9Q8p",
-                    "offsetPeriodType": "Quarterly",
-                    "offsetPeriods": -3,
-                    "sharing": {
-                        "external": false,
-                        "userGroups": {},
-                        "users": {}
-                    },
-                    "translations": [],
-                    "userAccesses": [],
-                    "userGroupAccesses": []
-                },
-                {
                     "analyticsPeriodBoundaryType": "BEFORE_END_OF_REPORTING_PERIOD",
                     "attributeValues": [],
                     "boundaryTarget": "ENROLLMENT_DATE",
-                    "externalAccess": false,
                     "favorite": false,
                     "favorites": [],
                     "id": "yrlP4axPjcF",
@@ -5263,9 +5704,23 @@
                         "userGroups": {},
                         "users": {}
                     },
-                    "translations": [],
-                    "userAccesses": [],
-                    "userGroupAccesses": []
+                    "translations": []
+                },
+                {
+                    "analyticsPeriodBoundaryType": "AFTER_START_OF_REPORTING_PERIOD",
+                    "attributeValues": [],
+                    "boundaryTarget": "ENROLLMENT_DATE",
+                    "favorite": false,
+                    "favorites": [],
+                    "id": "c1d8zUd9Q8p",
+                    "offsetPeriodType": "Quarterly",
+                    "offsetPeriods": -3,
+                    "sharing": {
+                        "external": false,
+                        "userGroups": {},
+                        "users": {}
+                    },
+                    "translations": []
                 }
             ],
             "analyticsType": "ENROLLMENT",
@@ -5315,29 +5770,9 @@
             "aggregationType": "COUNT",
             "analyticsPeriodBoundaries": [
                 {
-                    "analyticsPeriodBoundaryType": "AFTER_START_OF_REPORTING_PERIOD",
-                    "attributeValues": [],
-                    "boundaryTarget": "ENROLLMENT_DATE",
-                    "externalAccess": false,
-                    "favorite": false,
-                    "favorites": [],
-                    "id": "OkOIJ8hIBzO",
-                    "offsetPeriodType": "Quarterly",
-                    "offsetPeriods": -3,
-                    "sharing": {
-                        "external": false,
-                        "userGroups": {},
-                        "users": {}
-                    },
-                    "translations": [],
-                    "userAccesses": [],
-                    "userGroupAccesses": []
-                },
-                {
                     "analyticsPeriodBoundaryType": "BEFORE_END_OF_REPORTING_PERIOD",
                     "attributeValues": [],
                     "boundaryTarget": "ENROLLMENT_DATE",
-                    "externalAccess": false,
                     "favorite": false,
                     "favorites": [],
                     "id": "IBNArO8czRY",
@@ -5348,9 +5783,23 @@
                         "userGroups": {},
                         "users": {}
                     },
-                    "translations": [],
-                    "userAccesses": [],
-                    "userGroupAccesses": []
+                    "translations": []
+                },
+                {
+                    "analyticsPeriodBoundaryType": "AFTER_START_OF_REPORTING_PERIOD",
+                    "attributeValues": [],
+                    "boundaryTarget": "ENROLLMENT_DATE",
+                    "favorite": false,
+                    "favorites": [],
+                    "id": "OkOIJ8hIBzO",
+                    "offsetPeriodType": "Quarterly",
+                    "offsetPeriods": -3,
+                    "sharing": {
+                        "external": false,
+                        "userGroups": {},
+                        "users": {}
+                    },
+                    "translations": []
                 }
             ],
             "analyticsType": "ENROLLMENT",
@@ -5400,29 +5849,9 @@
             "aggregationType": "COUNT",
             "analyticsPeriodBoundaries": [
                 {
-                    "analyticsPeriodBoundaryType": "AFTER_START_OF_REPORTING_PERIOD",
-                    "attributeValues": [],
-                    "boundaryTarget": "ENROLLMENT_DATE",
-                    "externalAccess": false,
-                    "favorite": false,
-                    "favorites": [],
-                    "id": "c8uJE2aO2Do",
-                    "offsetPeriodType": "Quarterly",
-                    "offsetPeriods": -3,
-                    "sharing": {
-                        "external": false,
-                        "userGroups": {},
-                        "users": {}
-                    },
-                    "translations": [],
-                    "userAccesses": [],
-                    "userGroupAccesses": []
-                },
-                {
                     "analyticsPeriodBoundaryType": "BEFORE_END_OF_REPORTING_PERIOD",
                     "attributeValues": [],
                     "boundaryTarget": "ENROLLMENT_DATE",
-                    "externalAccess": false,
                     "favorite": false,
                     "favorites": [],
                     "id": "bkj6vdrMsyM",
@@ -5433,9 +5862,23 @@
                         "userGroups": {},
                         "users": {}
                     },
-                    "translations": [],
-                    "userAccesses": [],
-                    "userGroupAccesses": []
+                    "translations": []
+                },
+                {
+                    "analyticsPeriodBoundaryType": "AFTER_START_OF_REPORTING_PERIOD",
+                    "attributeValues": [],
+                    "boundaryTarget": "ENROLLMENT_DATE",
+                    "favorite": false,
+                    "favorites": [],
+                    "id": "c8uJE2aO2Do",
+                    "offsetPeriodType": "Quarterly",
+                    "offsetPeriods": -3,
+                    "sharing": {
+                        "external": false,
+                        "userGroups": {},
+                        "users": {}
+                    },
+                    "translations": []
                 }
             ],
             "analyticsType": "ENROLLMENT",
@@ -6738,6 +7181,9 @@
             },
             "programRuleActions": [
                 {
+                    "id": "d9dh2T5ZvRS"
+                },
+                {
                     "id": "B836jiTvzT1"
                 },
                 {
@@ -6745,9 +7191,6 @@
                 },
                 {
                     "id": "dEjkzoiZv5o"
-                },
-                {
-                    "id": "d9dh2T5ZvRS"
                 },
                 {
                     "id": "hwtsemMhhnE"
@@ -7145,7 +7588,6 @@
                         "id": "ehtg3U5qmuI"
                     },
                     "displayInReports": false,
-                    "externalAccess": false,
                     "favorite": false,
                     "favorites": [],
                     "id": "jNmR324gCIH",
@@ -7161,9 +7603,7 @@
                     "skipAnalytics": false,
                     "skipSynchronization": false,
                     "sortOrder": 5,
-                    "translations": [],
-                    "userAccesses": [],
-                    "userGroupAccesses": []
+                    "translations": []
                 },
                 {
                     "allowFutureDate": false,
@@ -7174,7 +7614,6 @@
                         "id": "V6RVBzCr3Kl"
                     },
                     "displayInReports": false,
-                    "externalAccess": false,
                     "favorite": false,
                     "favorites": [],
                     "id": "nXFyItOC3bF",
@@ -7190,9 +7629,7 @@
                     "skipAnalytics": false,
                     "skipSynchronization": false,
                     "sortOrder": 6,
-                    "translations": [],
-                    "userAccesses": [],
-                    "userGroupAccesses": []
+                    "translations": []
                 },
                 {
                     "allowFutureDate": false,
@@ -7203,7 +7640,6 @@
                         "id": "mb3xEno1sXc"
                     },
                     "displayInReports": false,
-                    "externalAccess": false,
                     "favorite": false,
                     "favorites": [],
                     "id": "IEQdN5Auf7Q",
@@ -7219,9 +7655,7 @@
                     "skipAnalytics": false,
                     "skipSynchronization": false,
                     "sortOrder": 9,
-                    "translations": [],
-                    "userAccesses": [],
-                    "userGroupAccesses": []
+                    "translations": []
                 },
                 {
                     "allowFutureDate": false,
@@ -7232,7 +7666,6 @@
                         "id": "Ha8Bxvl5eUy"
                     },
                     "displayInReports": false,
-                    "externalAccess": false,
                     "favorite": false,
                     "favorites": [],
                     "id": "F9BaLRRlFeE",
@@ -7248,9 +7681,7 @@
                     "skipAnalytics": false,
                     "skipSynchronization": false,
                     "sortOrder": 10,
-                    "translations": [],
-                    "userAccesses": [],
-                    "userGroupAccesses": []
+                    "translations": []
                 },
                 {
                     "allowFutureDate": false,
@@ -7261,7 +7692,6 @@
                         "id": "LdcnDru2n6W"
                     },
                     "displayInReports": false,
-                    "externalAccess": false,
                     "favorite": false,
                     "favorites": [],
                     "id": "Wda3acGdYs2",
@@ -7277,9 +7707,7 @@
                     "skipAnalytics": false,
                     "skipSynchronization": false,
                     "sortOrder": 11,
-                    "translations": [],
-                    "userAccesses": [],
-                    "userGroupAccesses": []
+                    "translations": []
                 },
                 {
                     "allowFutureDate": false,
@@ -7290,7 +7718,6 @@
                         "id": "yTmPzz0Hz5D"
                     },
                     "displayInReports": false,
-                    "externalAccess": false,
                     "favorite": false,
                     "favorites": [],
                     "id": "LB8VrfviFuH",
@@ -7306,9 +7733,7 @@
                     "skipAnalytics": false,
                     "skipSynchronization": false,
                     "sortOrder": 12,
-                    "translations": [],
-                    "userAccesses": [],
-                    "userGroupAccesses": []
+                    "translations": []
                 },
                 {
                     "allowFutureDate": false,
@@ -7319,7 +7744,6 @@
                         "id": "dC5KprJ8kVK"
                     },
                     "displayInReports": false,
-                    "externalAccess": false,
                     "favorite": false,
                     "favorites": [],
                     "id": "o9fqZD9Tc0q",
@@ -7335,9 +7759,7 @@
                     "skipAnalytics": false,
                     "skipSynchronization": false,
                     "sortOrder": 13,
-                    "translations": [],
-                    "userAccesses": [],
-                    "userGroupAccesses": []
+                    "translations": []
                 },
                 {
                     "allowFutureDate": false,
@@ -7348,7 +7770,6 @@
                         "id": "AAZDWT8xobg"
                     },
                     "displayInReports": false,
-                    "externalAccess": false,
                     "favorite": false,
                     "favorites": [],
                     "id": "i4kUHUlJZ2H",
@@ -7364,9 +7785,7 @@
                     "skipAnalytics": false,
                     "skipSynchronization": false,
                     "sortOrder": 13,
-                    "translations": [],
-                    "userAccesses": [],
-                    "userGroupAccesses": []
+                    "translations": []
                 },
                 {
                     "allowFutureDate": false,
@@ -7377,7 +7796,6 @@
                         "id": "PC6rHuEc4fN"
                     },
                     "displayInReports": false,
-                    "externalAccess": false,
                     "favorite": false,
                     "favorites": [],
                     "id": "nUEoRk6g6yq",
@@ -7393,9 +7811,7 @@
                     "skipAnalytics": false,
                     "skipSynchronization": false,
                     "sortOrder": 14,
-                    "translations": [],
-                    "userAccesses": [],
-                    "userGroupAccesses": []
+                    "translations": []
                 },
                 {
                     "allowFutureDate": false,
@@ -7406,7 +7822,6 @@
                         "id": "F4w44YRmTP2"
                     },
                     "displayInReports": false,
-                    "externalAccess": false,
                     "favorite": false,
                     "favorites": [],
                     "id": "JUdzs4wYSSM",
@@ -7422,9 +7837,7 @@
                     "skipAnalytics": false,
                     "skipSynchronization": false,
                     "sortOrder": 15,
-                    "translations": [],
-                    "userAccesses": [],
-                    "userGroupAccesses": []
+                    "translations": []
                 },
                 {
                     "allowFutureDate": false,
@@ -7435,7 +7848,6 @@
                         "id": "XwaUEXxDQ2I"
                     },
                     "displayInReports": false,
-                    "externalAccess": false,
                     "favorite": false,
                     "favorites": [],
                     "id": "rxD8ArDIi4z",
@@ -7451,9 +7863,7 @@
                     "skipAnalytics": false,
                     "skipSynchronization": false,
                     "sortOrder": 16,
-                    "translations": [],
-                    "userAccesses": [],
-                    "userGroupAccesses": []
+                    "translations": []
                 },
                 {
                     "allowFutureDate": false,
@@ -7464,7 +7874,6 @@
                         "id": "tGWC2TJDhSr"
                     },
                     "displayInReports": false,
-                    "externalAccess": false,
                     "favorite": false,
                     "favorites": [],
                     "id": "ZF2atoi0aC1",
@@ -7480,9 +7889,7 @@
                     "skipAnalytics": false,
                     "skipSynchronization": false,
                     "sortOrder": 17,
-                    "translations": [],
-                    "userAccesses": [],
-                    "userGroupAccesses": []
+                    "translations": []
                 },
                 {
                     "allowFutureDate": false,
@@ -7493,7 +7900,6 @@
                         "id": "eWpBX8MoBKM"
                     },
                     "displayInReports": false,
-                    "externalAccess": false,
                     "favorite": false,
                     "favorites": [],
                     "id": "E0Ykx4kah6N",
@@ -7509,9 +7915,7 @@
                     "skipAnalytics": false,
                     "skipSynchronization": false,
                     "sortOrder": 18,
-                    "translations": [],
-                    "userAccesses": [],
-                    "userGroupAccesses": []
+                    "translations": []
                 },
                 {
                     "allowFutureDate": false,
@@ -7522,7 +7926,6 @@
                         "id": "bhQxqt7KmuA"
                     },
                     "displayInReports": false,
-                    "externalAccess": false,
                     "favorite": false,
                     "favorites": [],
                     "id": "VpVEUbbTQVQ",
@@ -7538,9 +7941,7 @@
                     "skipAnalytics": false,
                     "skipSynchronization": false,
                     "sortOrder": 19,
-                    "translations": [],
-                    "userAccesses": [],
-                    "userGroupAccesses": []
+                    "translations": []
                 },
                 {
                     "allowFutureDate": false,
@@ -7551,7 +7952,6 @@
                         "id": "xU3IbeemuLU"
                     },
                     "displayInReports": false,
-                    "externalAccess": false,
                     "favorite": false,
                     "favorites": [],
                     "id": "anzPNwmygOY",
@@ -7567,9 +7967,7 @@
                     "skipAnalytics": false,
                     "skipSynchronization": false,
                     "sortOrder": 20,
-                    "translations": [],
-                    "userAccesses": [],
-                    "userGroupAccesses": []
+                    "translations": []
                 },
                 {
                     "allowFutureDate": false,
@@ -7580,7 +7978,6 @@
                         "id": "ZA4E5ZSwRTW"
                     },
                     "displayInReports": false,
-                    "externalAccess": false,
                     "favorite": false,
                     "favorites": [],
                     "id": "cnNSt6JH18s",
@@ -7596,9 +7993,7 @@
                     "skipAnalytics": false,
                     "skipSynchronization": false,
                     "sortOrder": 21,
-                    "translations": [],
-                    "userAccesses": [],
-                    "userGroupAccesses": []
+                    "translations": []
                 },
                 {
                     "allowFutureDate": false,
@@ -7609,7 +8004,6 @@
                         "id": "pT9JM1aXdab"
                     },
                     "displayInReports": false,
-                    "externalAccess": false,
                     "favorite": false,
                     "favorites": [],
                     "id": "mBOzyWO2fD8",
@@ -7625,9 +8019,7 @@
                     "skipAnalytics": false,
                     "skipSynchronization": false,
                     "sortOrder": 22,
-                    "translations": [],
-                    "userAccesses": [],
-                    "userGroupAccesses": []
+                    "translations": []
                 },
                 {
                     "allowFutureDate": false,
@@ -7638,7 +8030,6 @@
                         "id": "mS1EnkNKB0N"
                     },
                     "displayInReports": false,
-                    "externalAccess": false,
                     "favorite": false,
                     "favorites": [],
                     "id": "CxqIcMDFk0K",
@@ -7654,9 +8045,7 @@
                     "skipAnalytics": false,
                     "skipSynchronization": false,
                     "sortOrder": 22,
-                    "translations": [],
-                    "userAccesses": [],
-                    "userGroupAccesses": []
+                    "translations": []
                 },
                 {
                     "allowFutureDate": false,
@@ -7667,7 +8056,6 @@
                         "id": "zF5Whe2bWIr"
                     },
                     "displayInReports": false,
-                    "externalAccess": false,
                     "favorite": false,
                     "favorites": [],
                     "id": "QxVRV1DIRfd",
@@ -7683,9 +8071,7 @@
                     "skipAnalytics": false,
                     "skipSynchronization": false,
                     "sortOrder": 23,
-                    "translations": [],
-                    "userAccesses": [],
-                    "userGroupAccesses": []
+                    "translations": []
                 },
                 {
                     "allowFutureDate": false,
@@ -7696,7 +8082,6 @@
                         "id": "hZylmq6QWDT"
                     },
                     "displayInReports": false,
-                    "externalAccess": false,
                     "favorite": false,
                     "favorites": [],
                     "id": "GSntWj8Ql10",
@@ -7712,9 +8097,7 @@
                     "skipAnalytics": false,
                     "skipSynchronization": false,
                     "sortOrder": 23,
-                    "translations": [],
-                    "userAccesses": [],
-                    "userGroupAccesses": []
+                    "translations": []
                 },
                 {
                     "allowFutureDate": false,
@@ -7725,7 +8108,6 @@
                         "id": "Uhwztjvdc3F"
                     },
                     "displayInReports": false,
-                    "externalAccess": false,
                     "favorite": false,
                     "favorites": [],
                     "id": "obSujIGbMF2",
@@ -7741,9 +8123,7 @@
                     "skipAnalytics": false,
                     "skipSynchronization": false,
                     "sortOrder": 25,
-                    "translations": [],
-                    "userAccesses": [],
-                    "userGroupAccesses": []
+                    "translations": []
                 },
                 {
                     "allowFutureDate": false,
@@ -7754,7 +8134,6 @@
                         "id": "BMriHTRrSiC"
                     },
                     "displayInReports": false,
-                    "externalAccess": false,
                     "favorite": false,
                     "favorites": [],
                     "id": "A0aXYgc3bEd",
@@ -7770,9 +8149,7 @@
                     "skipAnalytics": false,
                     "skipSynchronization": false,
                     "sortOrder": 25,
-                    "translations": [],
-                    "userAccesses": [],
-                    "userGroupAccesses": []
+                    "translations": []
                 }
             ],
             "programStageSections": [
@@ -7859,7 +8236,6 @@
                         "id": "r7524KUoKtR"
                     },
                     "displayInReports": false,
-                    "externalAccess": false,
                     "favorite": false,
                     "favorites": [],
                     "id": "FUUbVtNzB6r",
@@ -7875,9 +8251,7 @@
                     "skipAnalytics": false,
                     "skipSynchronization": false,
                     "sortOrder": 1,
-                    "translations": [],
-                    "userAccesses": [],
-                    "userGroupAccesses": []
+                    "translations": []
                 },
                 {
                     "allowFutureDate": false,
@@ -7888,7 +8262,6 @@
                         "id": "PggltT3qKDt"
                     },
                     "displayInReports": false,
-                    "externalAccess": false,
                     "favorite": false,
                     "favorites": [],
                     "id": "zmgYMxbyaB0",
@@ -7904,9 +8277,7 @@
                     "skipAnalytics": false,
                     "skipSynchronization": false,
                     "sortOrder": 5,
-                    "translations": [],
-                    "userAccesses": [],
-                    "userGroupAccesses": []
+                    "translations": []
                 },
                 {
                     "allowFutureDate": false,
@@ -7917,7 +8288,6 @@
                         "id": "UvYtQtcbIkS"
                     },
                     "displayInReports": false,
-                    "externalAccess": false,
                     "favorite": false,
                     "favorites": [],
                     "id": "hsHuBA79q3n",
@@ -7933,9 +8303,7 @@
                     "skipAnalytics": false,
                     "skipSynchronization": false,
                     "sortOrder": 6,
-                    "translations": [],
-                    "userAccesses": [],
-                    "userGroupAccesses": []
+                    "translations": []
                 },
                 {
                     "allowFutureDate": true,
@@ -7946,7 +8314,6 @@
                         "id": "QpTelDgL9OG"
                     },
                     "displayInReports": false,
-                    "externalAccess": false,
                     "favorite": false,
                     "favorites": [],
                     "id": "DaNF8UMxPj9",
@@ -7962,9 +8329,7 @@
                     "skipAnalytics": false,
                     "skipSynchronization": false,
                     "sortOrder": 7,
-                    "translations": [],
-                    "userAccesses": [],
-                    "userGroupAccesses": []
+                    "translations": []
                 },
                 {
                     "allowFutureDate": false,
@@ -7975,7 +8340,6 @@
                         "id": "Clp8fsfaHzJ"
                     },
                     "displayInReports": false,
-                    "externalAccess": false,
                     "favorite": false,
                     "favorites": [],
                     "id": "ZvKD4RPagZH",
@@ -7991,9 +8355,7 @@
                     "skipAnalytics": false,
                     "skipSynchronization": false,
                     "sortOrder": 8,
-                    "translations": [],
-                    "userAccesses": [],
-                    "userGroupAccesses": []
+                    "translations": []
                 },
                 {
                     "allowFutureDate": false,
@@ -8004,7 +8366,6 @@
                         "id": "BFAhfNcBzGP"
                     },
                     "displayInReports": false,
-                    "externalAccess": false,
                     "favorite": false,
                     "favorites": [],
                     "id": "rHw3nRS2SpY",
@@ -8020,9 +8381,7 @@
                     "skipAnalytics": false,
                     "skipSynchronization": false,
                     "sortOrder": 9,
-                    "translations": [],
-                    "userAccesses": [],
-                    "userGroupAccesses": []
+                    "translations": []
                 },
                 {
                     "allowFutureDate": false,
@@ -8033,7 +8392,6 @@
                         "id": "NvN5GC5HB8q"
                     },
                     "displayInReports": false,
-                    "externalAccess": false,
                     "favorite": false,
                     "favorites": [],
                     "id": "JZDzhyTtADZ",
@@ -8049,9 +8407,7 @@
                     "skipAnalytics": false,
                     "skipSynchronization": false,
                     "sortOrder": 10,
-                    "translations": [],
-                    "userAccesses": [],
-                    "userGroupAccesses": []
+                    "translations": []
                 }
             ],
             "programStageSections": [
@@ -8120,7 +8476,6 @@
                         "id": "DgKsDqyBPCG"
                     },
                     "displayInReports": false,
-                    "externalAccess": false,
                     "favorite": false,
                     "favorites": [],
                     "id": "jiuPF4Z3A4q",
@@ -8136,9 +8491,7 @@
                     "skipAnalytics": false,
                     "skipSynchronization": false,
                     "sortOrder": 1,
-                    "translations": [],
-                    "userAccesses": [],
-                    "userGroupAccesses": []
+                    "translations": []
                 },
                 {
                     "allowFutureDate": false,
@@ -8149,7 +8502,6 @@
                         "id": "Clp8fsfaHzJ"
                     },
                     "displayInReports": false,
-                    "externalAccess": false,
                     "favorite": false,
                     "favorites": [],
                     "id": "LYMNkhIQIai",
@@ -8165,9 +8517,7 @@
                     "skipAnalytics": false,
                     "skipSynchronization": false,
                     "sortOrder": 2,
-                    "translations": [],
-                    "userAccesses": [],
-                    "userGroupAccesses": []
+                    "translations": []
                 },
                 {
                     "allowFutureDate": false,
@@ -8178,7 +8528,6 @@
                         "id": "t5ECMNPBNuD"
                     },
                     "displayInReports": false,
-                    "externalAccess": false,
                     "favorite": false,
                     "favorites": [],
                     "id": "VABGEy4hc4g",
@@ -8194,9 +8543,7 @@
                     "skipAnalytics": false,
                     "skipSynchronization": false,
                     "sortOrder": 3,
-                    "translations": [],
-                    "userAccesses": [],
-                    "userGroupAccesses": []
+                    "translations": []
                 },
                 {
                     "allowFutureDate": false,
@@ -8207,7 +8554,6 @@
                         "id": "QhoYn2gsybh"
                     },
                     "displayInReports": false,
-                    "externalAccess": false,
                     "favorite": false,
                     "favorites": [],
                     "id": "dVqVFKxagQq",
@@ -8223,9 +8569,7 @@
                     "skipAnalytics": false,
                     "skipSynchronization": false,
                     "sortOrder": 4,
-                    "translations": [],
-                    "userAccesses": [],
-                    "userGroupAccesses": []
+                    "translations": []
                 }
             ],
             "programStageSections": [
@@ -8300,7 +8644,6 @@
                 {
                     "attributeValues": [],
                     "displayInList": true,
-                    "externalAccess": false,
                     "favorite": false,
                     "favorites": [],
                     "id": "rlMoHB4lHMU",
@@ -8320,14 +8663,11 @@
                         "id": "Ewi7FUfcHAD"
                     },
                     "translations": [],
-                    "userAccesses": [],
-                    "userGroupAccesses": [],
                     "valueType": "TEXT"
                 },
                 {
                     "attributeValues": [],
                     "displayInList": false,
-                    "externalAccess": false,
                     "favorite": false,
                     "favorites": [],
                     "id": "iXSmON6YHfH",
@@ -8347,14 +8687,11 @@
                         "id": "Ys8oLYQzmR3"
                     },
                     "translations": [],
-                    "userAccesses": [],
-                    "userGroupAccesses": [],
                     "valueType": "TEXT"
                 },
                 {
                     "attributeValues": [],
                     "displayInList": true,
-                    "externalAccess": false,
                     "favorite": false,
                     "favorites": [],
                     "id": "KK4C1F00uUY",
@@ -8374,14 +8711,11 @@
                         "id": "sB1IHYu2xQT"
                     },
                     "translations": [],
-                    "userAccesses": [],
-                    "userGroupAccesses": [],
                     "valueType": "TEXT"
                 },
                 {
                     "attributeValues": [],
                     "displayInList": true,
-                    "externalAccess": false,
                     "favorite": false,
                     "favorites": [],
                     "id": "EzWwRk6CZVh",
@@ -8401,14 +8735,11 @@
                         "id": "ENRjVGxVL6l"
                     },
                     "translations": [],
-                    "userAccesses": [],
-                    "userGroupAccesses": [],
                     "valueType": "TEXT"
                 },
                 {
                     "attributeValues": [],
                     "displayInList": true,
-                    "externalAccess": false,
                     "favorite": false,
                     "favorites": [],
                     "id": "PQ4s4pqVb7Q",
@@ -8428,14 +8759,11 @@
                         "id": "oindugucx72"
                     },
                     "translations": [],
-                    "userAccesses": [],
-                    "userGroupAccesses": [],
                     "valueType": "TEXT"
                 },
                 {
                     "attributeValues": [],
                     "displayInList": false,
-                    "externalAccess": false,
                     "favorite": false,
                     "favorites": [],
                     "id": "FSThxdAHMeq",
@@ -8455,14 +8783,11 @@
                         "id": "Z1rLc1rVHK8"
                     },
                     "translations": [],
-                    "userAccesses": [],
-                    "userGroupAccesses": [],
                     "valueType": "TRUE_ONLY"
                 },
                 {
                     "attributeValues": [],
                     "displayInList": true,
-                    "externalAccess": false,
                     "favorite": false,
                     "favorites": [],
                     "id": "l5n1gBTHvAf",
@@ -8482,14 +8807,11 @@
                         "id": "NI0QRzJvQ0k"
                     },
                     "translations": [],
-                    "userAccesses": [],
-                    "userGroupAccesses": [],
                     "valueType": "DATE"
                 },
                 {
                     "attributeValues": [],
                     "displayInList": false,
-                    "externalAccess": false,
                     "favorite": false,
                     "favorites": [],
                     "id": "BgbbXKWKscs",
@@ -8509,14 +8831,11 @@
                         "id": "xdRQzKcARGt"
                     },
                     "translations": [],
-                    "userAccesses": [],
-                    "userGroupAccesses": [],
                     "valueType": "TEXT"
                 },
                 {
                     "attributeValues": [],
                     "displayInList": false,
-                    "externalAccess": false,
                     "favorite": false,
                     "favorites": [],
                     "id": "KjFyNi7aXC2",
@@ -8536,14 +8855,11 @@
                         "id": "ljHL8NnSEAD"
                     },
                     "translations": [],
-                    "userAccesses": [],
-                    "userGroupAccesses": [],
                     "valueType": "ORGANISATION_UNIT"
                 },
                 {
                     "attributeValues": [],
                     "displayInList": false,
-                    "externalAccess": false,
                     "favorite": false,
                     "favorites": [],
                     "id": "B3yjV8RUvQB",
@@ -8563,14 +8879,11 @@
                         "id": "Xhdn49gUd52"
                     },
                     "translations": [],
-                    "userAccesses": [],
-                    "userGroupAccesses": [],
                     "valueType": "LONG_TEXT"
                 },
                 {
                     "attributeValues": [],
                     "displayInList": false,
-                    "externalAccess": false,
                     "favorite": false,
                     "favorites": [],
                     "id": "KQlDYblWIWQ",
@@ -8590,14 +8903,11 @@
                         "id": "fctSQp5nAYl"
                     },
                     "translations": [],
-                    "userAccesses": [],
-                    "userGroupAccesses": [],
                     "valueType": "PHONE_NUMBER"
                 },
                 {
                     "attributeValues": [],
                     "displayInList": false,
-                    "externalAccess": false,
                     "favorite": false,
                     "favorites": [],
                     "id": "hKbEU2hYbWC",
@@ -8617,14 +8927,11 @@
                         "id": "bcxg5eLMBZA"
                     },
                     "translations": [],
-                    "userAccesses": [],
-                    "userGroupAccesses": [],
                     "valueType": "TEXT"
                 },
                 {
                     "attributeValues": [],
                     "displayInList": false,
-                    "externalAccess": false,
                     "favorite": false,
                     "favorites": [],
                     "id": "o5PCsMGrRRM",
@@ -8644,14 +8951,11 @@
                         "id": "Gpk1EOXem7h"
                     },
                     "translations": [],
-                    "userAccesses": [],
-                    "userGroupAccesses": [],
                     "valueType": "TEXT"
                 },
                 {
                     "attributeValues": [],
                     "displayInList": false,
-                    "externalAccess": false,
                     "favorite": false,
                     "favorites": [],
                     "id": "jX1iLokfz8W",
@@ -8671,14 +8975,11 @@
                         "id": "wnsulJwX2O6"
                     },
                     "translations": [],
-                    "userAccesses": [],
-                    "userGroupAccesses": [],
                     "valueType": "TEXT"
                 },
                 {
                     "attributeValues": [],
                     "displayInList": false,
-                    "externalAccess": false,
                     "favorite": false,
                     "favorites": [],
                     "id": "Pq5BDgvn3nV",
@@ -8698,14 +8999,11 @@
                         "id": "pQhgTA1ndgT"
                     },
                     "translations": [],
-                    "userAccesses": [],
-                    "userGroupAccesses": [],
                     "valueType": "TEXT"
                 },
                 {
                     "attributeValues": [],
                     "displayInList": false,
-                    "externalAccess": false,
                     "favorite": false,
                     "favorites": [],
                     "id": "dJQJ9oagZLt",
@@ -8725,8 +9023,6 @@
                         "id": "tLdqXZAPjIl"
                     },
                     "translations": [],
-                    "userAccesses": [],
-                    "userGroupAccesses": [],
                     "valueType": "TEXT"
                 }
             ],
@@ -10830,12 +11126,11 @@
                 {
                     "attributeValues": [],
                     "displayInList": true,
-                    "externalAccess": false,
                     "favorite": false,
                     "favorites": [],
                     "id": "ycDbR77mXr0",
                     "name": "Person GEN - Given name",
-                    "searchable": false,
+                    "searchable": true,
                     "sharing": {
                         "external": false,
                         "userGroups": {},
@@ -10848,19 +11143,16 @@
                         "id": "MCPQUTHX1Ze"
                     },
                     "translations": [],
-                    "userAccesses": [],
-                    "userGroupAccesses": [],
                     "valueType": "TEXT"
                 },
                 {
                     "attributeValues": [],
                     "displayInList": true,
-                    "externalAccess": false,
                     "favorite": false,
                     "favorites": [],
                     "id": "o71yvCr2FeK",
                     "name": "Person GEN - Family name",
-                    "searchable": false,
+                    "searchable": true,
                     "sharing": {
                         "external": false,
                         "userGroups": {},
@@ -10873,19 +11165,16 @@
                         "id": "MCPQUTHX1Ze"
                     },
                     "translations": [],
-                    "userAccesses": [],
-                    "userGroupAccesses": [],
                     "valueType": "TEXT"
                 },
                 {
                     "attributeValues": [],
                     "displayInList": true,
-                    "externalAccess": false,
                     "favorite": false,
                     "favorites": [],
                     "id": "zbtg66rKJcj",
                     "name": "Person GEN - National ID",
-                    "searchable": false,
+                    "searchable": true,
                     "sharing": {
                         "external": false,
                         "userGroups": {},
@@ -10898,8 +11187,6 @@
                         "id": "MCPQUTHX1Ze"
                     },
                     "translations": [],
-                    "userAccesses": [],
-                    "userGroupAccesses": [],
                     "valueType": "TEXT"
                 }
             ],
